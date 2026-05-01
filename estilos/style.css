@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*
+Paleta de cores:
+Verde: #49a09d
+Lílas: #5f2c82
+*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #5f2c82;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login {
+    width: 320px;
+    height: 568px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.450);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+section#login > div#imagem {
+    display: block;
+    background:  #5f2c82 url(../imagens/predio.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: left bottom;
+}
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+form > div.campo {
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+form > div.campo > span {
+    /*background-color: black;*/
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > label {
+    display: none;
+}
+div.campo > input {
+    background-color: #19dad0;
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translateY(-11px)
+}
+section#login > div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+section#login > div#formulario > p {
+    font-size: 1em;
+    margin: 20px 0px;
+}
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:  #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+form > input[type=submit]:hover {
+    background-color: #2d5e5c;
+    cursor: pointer;
+}
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #234b49;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+}
+form > a.botao:hover {
+    background-color: #60ceca;
+}
+form > a.botao > span {
+    font-size: 1em;
+}
