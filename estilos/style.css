@@ -30,9 +30,10 @@ section#login {
     left: 50%;
     overflow: hidden;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.450);
+    transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
+    
 }
 section#login > div#imagem {
     display: block;
